@@ -18,7 +18,6 @@ class Market(models.Model):
     def __str__(self):
         return self.name
 
-
 class Mahsol(models.Model):
     image0=models.ImageField(upload_to='image',blank=True)
     image1=models.ImageField(upload_to='image',blank=True)

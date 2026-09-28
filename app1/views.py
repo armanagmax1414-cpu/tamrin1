@@ -94,3 +94,13 @@ class MahsolViewSet(viewsets.ModelViewSet):
 class MarketViewSet(viewsets.ModelViewSet):
     queryset=Market.objects.all()
     serializer_class=MarketSerializer    
+
+from django.http import HttpResponse
+from django.urls import path
+
+def home(request):
+    return HttpResponse("API is running!")
+
+urlpatterns = [
+    path('', home), 
+]
