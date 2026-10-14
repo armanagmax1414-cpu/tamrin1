@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-(j2@53dz353@v93jr0el!-%fk4b(!jbc*=-z-id-1jn1f6so@m
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["'tamrin1-1.onrender.com', '127.0.0.1', 'localhost'"]
+ALLOWED_HOSTS = [ALLOWED_HOSTS = ["tamrin1-1.onrender.com"]]
 
 STATIC_URL = 'static/'
 STATIC_ROOT = BASE_DIR / 'staticfiles'
@@ -45,6 +45,10 @@ INSTALLED_APPS = [
     'rest_framework_simplejwt',
     'drf_yasg',
 
+]
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://tamrin1-1.onrender.com",
 ]
 
 MIDDLEWARE = [
