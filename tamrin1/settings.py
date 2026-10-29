@@ -29,7 +29,7 @@ ALLOWED_HOSTS = ["tamrin1-1.onrender.com"]
 
 STATIC_URL = 'static/'
 STATIC_ROOT = BASE_DIR / 'staticfiles'
-AUTH_USER_MODEL="app1.acounts"
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -127,6 +127,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
+STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 # Default primary key field type
